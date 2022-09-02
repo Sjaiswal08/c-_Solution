@@ -1,0 +1,451 @@
+1. Difference between c# and c++.
+
+C#
+
+C# is high level language.
+C# compiles to CLR(Common language runtime).
+C# is component oriented language.
+
+C++
+
+C++ is low level language.
+C++ compiles to Machine Code.
+C++ is object oriented language.
+
+ 2. C# Program to Swap Values of Two Variables.
+
+using System;
+
+public class Swap
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine ("Enter two numbers");
+        int a,b;
+        a=Convert.ToInt32(Console.ReadLine());
+        b=Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Before Swap a="+a+"  b="+b);
+        a=a+b;
+        b=a-b;
+        a=a-b;
+        Console.WriteLine("After Swap a="+a+"  b="+b);
+        
+    }
+}
+
+3.  C# Program to Multiply two Floating Point Numbers
+
+
+using System;
+
+public class Mul
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine ("Enter two numbers");
+        float a,b;
+        a=Convert.ToSingle(Console.ReadLine());
+        b=Convert.ToSingle(Console.ReadLine());
+      a=a*b;
+        
+        Console.WriteLine("Multiplication Of Two Floating number"+a);
+        
+    }
+}
+
+4.  C# Program to perform all arithmetic operations
+
+using System;
+
+class Program
+    {
+        static void Main(string[] args)
+        {
+            int a;
+            int b;
+            int sum, sub, mult;
+            float div;
+            Console.WriteLine("Enter first number :");
+            a = Convert.ToInt32( Console.ReadLine());
+            Console.WriteLine("Enter second number :");
+            b = Convert.ToInt32(Console.ReadLine());
+            sum = a + b;
+            sub = a - b;
+            mult = a * b;
+           
+            div = (float)a / b;
+            Console.WriteLine("\nAddition of two number " + sum);
+            Console.WriteLine("Difference of two number "+ sub);
+            Console.WriteLine("Product of two number " + mult);
+            Console.WriteLine("Division of two number " + div);
+           
+        }
+    }
+
+
+5.C# Program to convert feet to meter
+
+
+using System;
+
+
+public class Program
+    {
+        static void Main(string[] args)
+        {
+         float a,b;
+         Console.WriteLine("Enter the feet");
+         a=Convert.ToSingle(Console.ReadLine());
+         b=a/12;
+          Console.WriteLine("meter ="+b);
+        }
+    }
+
+
+
+6.   C# Program to convert celcius to farenheit
+
+using System;
+
+
+public class Program
+    {
+        static void Main(string[] args)
+        {
+         double a,b;
+         Console.WriteLine("Enter in celcius");
+         a=Convert.ToDouble(Console.ReadLine());
+         b=(a * 9) / 5 + 32;
+          Console.WriteLine("Fahrenheit ="+b);
+        }
+    }
+
+
+7.  C# Program to convert farenheit to celcius
+
+using System;
+
+
+public class Program
+    {
+        static void Main(string[] args)
+        {
+         double a,b;
+         Console.WriteLine("Enter in Fahrenheit");
+         a=Convert.ToDouble(Console.ReadLine());
+         b=(a - 32) * 5 / 9;
+          Console.WriteLine("Celcious ="+b);
+        }
+    }
+
+
+8.  C# Program to find the Size of data types
+
+using System;
+
+
+ class Program
+    {
+        static void Main(string[] args)
+        {
+            
+            Console.WriteLine("Size of char " + sizeof(char));
+            Console.WriteLine("Size of Short" + sizeof(short));
+            Console.WriteLine("Size of int" + sizeof(int));
+            Console.WriteLine("Size of long" + sizeof(long));
+            Console.WriteLine("Size of float" + sizeof(float));
+            Console.WriteLine("Size of double" + sizeof(double));
+        }
+    }
+
+9. C# Program to Print ASCII Value
+
+using System;
+
+
+ class Program
+    {
+        static void Main(string[] args)
+        {
+            
+            Console.WriteLine("Enter the character");
+            char alpha=Convert.ToChar(Console.ReadLine());
+            int a=Convert.ToInt32(alpha);
+            Console.WriteLine("ASCII value ="+a);
+           
+        }
+    }
+
+10. C# Program to Calculate Area of Circle
+
+using System;
+
+
+ class Program
+    {
+        static void Main(string[] args)
+        {
+            
+            Console.WriteLine("Enter the Radius");
+            double radius=Convert.ToDouble(Console.ReadLine());
+            double area= 3.14*radius*radius;
+            Console.WriteLine("area of circle"+area);
+           
+        }
+    }
+
+11.  C# Program to Calculate Area of Square
+
+using System;
+
+
+ class Program
+    {
+        static void Main(string[] args)
+        {
+            
+            Console.WriteLine("Enter the side");
+            double length=Convert.ToDouble(Console.ReadLine());
+            double area= length*length;
+            Console.WriteLine("area of square"+area);
+           
+        }
+    }
+
+12.C# Program to Calculate Area of Rectangle
+
+using System;
+
+
+ class Program
+    {
+        static void Main(string[] args)
+        {
+            
+            Console.WriteLine("Enter the height");
+            double h=Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Enter the breadth");
+            double b=Convert.ToDouble(Console.ReadLine());
+            double area= h*b;
+            Console.WriteLine("area of rectangle"+area);
+           
+        }
+    }
+
+13. C# Program to convert days to years, weeks and days
+
+using System;
+
+
+ class Program
+    {
+        static void Main(string[] args)
+        {
+            
+            Console.WriteLine("Enter the total number of days");
+            int n=Convert.ToInt32(Console.ReadLine());
+            float week,year;
+            week=(float)n/7;
+             Console.WriteLine("Enter the total number of week"+week);
+            year=(float)n/365;
+             Console.WriteLine("Enter the total number of year"+year);
+           
+        }
+    }
+
+
+14. C# program showing the different oops concepts
+
+    Inheritance
+
+class Vehicle  
+{
+  public string company = "Tata";
+  public void start()             
+  {                    
+    Console.WriteLine("car is started");
+  }
+}
+
+class Car : Vehicle
+{
+  public string type = "Nexon";
+}
+
+class Program
+{
+  static void Main(string[] args)
+  {
+    Car myCar = new Car();
+    myCar.start();
+    Console.WriteLine(myCar.company + " " + myCar.type);
+  }
+}
+
+ Abstraction
+
+abstract class Company
+{
+ public abstract void employee();
+ public void name()
+ {
+  Console.WriteLine("This is NRI FinTech");
+ }
+}
+class Detail : Company
+{
+ public override void employee()
+ {
+  Console.WriteLine("Name of employee is Shubham Jaiswal");
+ }
+}
+class Program
+  {
+    static void Main(string[] args)
+    {
+      Detail detail= new Detail();
+      detail.name();
+      detail.employee();
+    }
+  }
+
+
+Polymorphism
+
+public class School
+{
+ public void name(string name)
+ {
+   Console.WriteLine("Name of School : "+name);
+ }
+ public void name(string name, string student)
+ {
+  Console.WriteLine("Name of School :"+name+" Name of student :"+student);
+ }
+}
+class Program
+{
+ static void Main(string args[])
+ {
+   School ob= new School();
+   ob.name("DAV Public School");
+   ob.name("DAV Public School", "Rahul Jaiswal");
+ }
+}
+
+
+15. C# program for bubble sort.
+
+using System;
+ 
+class Bubble
+{
+ public void sort(int[] arr)
+ {
+  int n = arr.Length;
+  for(int i = 0; i < n - 1; i++)
+   for (int j = 0; j < n - i - 1; j++)
+    if (arr[j] > arr[j + 1])
+     {
+      int temp = arr[j];
+      arr[j] = arr[j + 1];
+      arr[j + 1] = temp;
+     }
+ }
+ public void printArray(int[] arr)
+ {
+  int n = arr.Length;
+  for (int i = 0; i < n; ++i)
+  Console.Write(arr[i] + " ");
+  Console.WriteLine();
+ }
+ 
+ public static void Main(string args[])
+ {
+  int[] arr = { 64, 34, 25, 12, 22, 11, 90 };
+  sort(arr);
+  Console.WriteLine("Sorted array");
+  printArray(arr);
+  }
+}
+
+16. C# program for binary search tree.
+
+ public class Node
+ {
+  public int Data;
+  public Node Left;
+  public Node Right;
+  public void DisplayNode()
+  {
+   Console.Write(Data + " ");
+  }
+ }
+
+
+17.
+
+using System;
+using System.IO;
+namespace readwriteapp
+{
+    class Program
+    {
+        
+        static void Main(string[] args)
+        {
+            string line;
+            try
+            {                
+                StreamReader sr = new StreamReader("C:\\Sample.txt");
+                line = sr.ReadLine();
+                while (line != null)
+                {
+                    Console.WriteLine(line);
+                    line = sr.ReadLine();
+                }
+                sr.Close();
+                Console.ReadLine();
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine("Exception: " + e.Message);
+            }
+            finally
+            {
+                Console.WriteLine("Executing finally block.");
+            }
+        }
+    }
+
+}
+
+
+
+using System;
+using System.IO;
+namespace readwriteapp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            try
+            {
+                StreamWriter sw = new StreamWriter("C:\\Test.txt");
+                sw.WriteLine("Hello World!!");
+                sw.WriteLine("From the StreamWriter class");
+                sw.Close();
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine("Exception: " + e.Message);
+            }
+            finally
+            {
+                Console.WriteLine("Executing finally block.");
+            }
+        }
+    }
+}
+ 
